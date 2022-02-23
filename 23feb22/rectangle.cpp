@@ -6,15 +6,20 @@ class rectangle
     public:
     int l;
     int b;
-
+    
+    int area(){
+        return l*b;
+    }
+     int perimeter(){
+         return 2*(l+b);
+     }
 };
 int main()
 {
     rectangle rec;
-    rec.l=20;
+    rec.l=333320;
     rec.b=50;
-    int area = rec.l*rec.b;
-    cout<<area<<endl;
-    int perimeter= 2*(rec.l+rec.b);
-    cout<< perimeter;
+    cout<<rec.area()<<endl;
+    cout<<rec.perimeter()<<endl;
+
 }

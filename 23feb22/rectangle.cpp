@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 class rectangle
@@ -53,25 +54,56 @@ public:
     }
 };
 
+class triangle
+{
+public:
+    float p;
+    float h;
+    float b;
+
+    float perimeter()
+    {
+        return p + b + h;
+    }
+
+    float area()
+    {
+        return b * p / 2;
+    }
+
+    float gethypotenous()
+    {
+        return pow(((p * p) + (b * b)), 0.5);
+    }
+};
+
 int main()
 {
     rectangle rec;
     rec.l = 30;
     rec.b = 50;
-    cout<<"for rectangle"<<endl;
+    cout << "for rectangle" << endl;
     cout << rec.area() << endl;
     cout << rec.perimeter() << endl;
 
     circle cir;
     cir.r = 1;
-    cout<<"for circle"<<endl;
+    cout << "for circle" << endl;
     cout << cir.area() << endl;
     cout << cir.circumference() << endl;
     cout << cir.getdiameter() << endl;
 
     square sq;
     sq.s = 3;
-    cout<<"for square"<<endl;
+    cout << "for square" << endl;
     cout << sq.area() << endl;
     cout << sq.perimeter() << endl;
+
+    triangle tri;
+    tri.p = 3;
+    tri.b = 4;
+    tri.h = tri.gethypotenous();
+    cout<<"for triangle"<<endl;
+    cout<<tri.perimeter()<<endl;
+    cout<<tri.area()<<endl;
 }

@@ -30,26 +30,48 @@ public:
     }
     float circumference()
     {
-        return 2*pi*r;
+        return 2 * pi * r;
     }
     float getdiameter()
     {
-        return r*2;
+        return r * 2;
     }
 };
 
+class square
+{
+public:
+    int s;
+
+    float area()
+    {
+        return s * s;
+    }
+    float perimeter()
+    {
+        return 4 * s;
+    }
+};
 
 int main()
 {
     rectangle rec;
-    rec.l = 333320;
+    rec.l = 30;
     rec.b = 50;
+    cout<<"for rectangle"<<endl;
     cout << rec.area() << endl;
     cout << rec.perimeter() << endl;
 
     circle cir;
-    cir.r=1;
+    cir.r = 1;
+    cout<<"for circle"<<endl;
     cout << cir.area() << endl;
     cout << cir.circumference() << endl;
     cout << cir.getdiameter() << endl;
+
+    square sq;
+    sq.s = 3;
+    cout<<"for square"<<endl;
+    cout << sq.area() << endl;
+    cout << sq.perimeter() << endl;
 }

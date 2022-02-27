@@ -1,14 +1,21 @@
 #include <iostream>
+#include<string>
 using namespace std;
 
 class quadrilateral
 {
 public:
+
     int a, b, c, d;
+    string info;
+    void what_am_I(){
+        cout<<"i'm a "<<info<<endl;
+    }
     int perimeter()
     {
         return a + b + c + d;
     }
+   
 };
 
 class square : public quadrilateral
@@ -17,6 +24,7 @@ public:
     square(int size)
     {
         a = b = c = d = size;
+        info="square";
     }
 };
 
@@ -27,6 +35,7 @@ public:
     {
         a = b = size1;
         c = d = size2;
+        info="rectangle";
     }
 };
 int main()
@@ -42,7 +51,9 @@ int main()
     square sq(22);
 
     cout << sq.perimeter() << endl;
+    sq.what_am_I();
 
     rectangle rec(40, 32);
     cout << rec.perimeter() << endl;
+    rec.what_am_I();
 }

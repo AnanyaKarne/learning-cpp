@@ -1,0 +1,11 @@
+set Person name
+ 1) get the Name to be set
+ 2) we need to make a function
+ 3) return type 
+ 4) Name
+ 5) Arguements/parameters/()<- inke andr jane wali values
+ 6) return type- void( kuch return nhi ho rha)
+ 7) set_name
+ 8) arguement -> string 
+ 9) name=arguement_name
+ 10) nothing returned 

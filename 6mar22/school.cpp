@@ -4,22 +4,40 @@ using namespace std;
 
 class school
 {
-public:
+
     string name;
     int code;
     float fee;
 
-    void set_name(string new_name){
+public:
+    void set_name(string new_name)
+    {
         name = new_name;
     }
 
-    void set_code(int new_code){
+    void set_code(int new_code)
+    {
         code = new_code;
     }
 
-    
-    void set_fee(float new_fee){
+    void set_fee(float new_fee)
+    {
         fee = new_fee;
+    }
+
+    string get_name()
+    {
+        return name;
+    }
+
+    int chinki()
+    {
+        return code;
+    }
+
+    float get_fee()
+    {
+        return fee;
     }
 };
 int main()
@@ -29,7 +47,7 @@ int main()
     sch.set_code(387);
     sch.set_fee(212000.34);
 
-    cout << sch.name << endl;
-    cout << sch.code << endl;
-    cout << sch.fee << endl;
+    cout << sch.get_name() << endl;
+    cout << sch.chinki() << endl;
+    cout << sch.get_fee() << endl;
 }

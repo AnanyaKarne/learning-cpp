@@ -13,6 +13,8 @@ int main()
         cout << a[i] << " " << endl;
     }
     cout << "element at 3rd index is : " << a.at(3) << endl; // accessing third element of the array
+    cout<<"STL array"<<endl;
     cout << "first elemetnt is : " << a.front() << endl;     // accessing first element of array
     cout << "last element is : " << a.back() << endl;        // accessing last element of array
+
 }

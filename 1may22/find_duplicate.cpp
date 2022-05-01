@@ -3,12 +3,13 @@ using namespace std;
 void duplicate(int ar[],int size){
     int ans=0;
      for(int i=0;i<size;i++){
-         ans=ans^ar[i];
+         ans=ar[i]^ar[i];
      }
-     for(int i=0;i<size;i++){
-         ans=ans^i;
-     }
-     cout<<"duplicate is: "<<ans;
+        cout<<"ans"<<ans;
+//      for(int i=0;i<size;i++){
+//          ans=ans^i;
+//      }
+//      cout<<"duplicate is: "<<ans;
 }
 int main(){
     int size;
@@ -19,3 +20,5 @@ int main(){
     }
     duplicate(ar,size);
 }
+// 1 4 2 3 5 3
+// 1 4 2 3 5 3

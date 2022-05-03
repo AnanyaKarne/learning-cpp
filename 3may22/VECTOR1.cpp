@@ -36,7 +36,8 @@ int main()
     // can use '.at' to find an element at an index
     cout << "element at 5th index is: " << v.at(5);
 
-    //  can use front() and back() same as array
+    //  can use front() and back() same as array.
+    // can use .begin() for the first element.
 
     v.pop_back();
     cout << "recent size of vector is:" << v.size() << endl;

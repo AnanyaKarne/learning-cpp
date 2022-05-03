@@ -32,4 +32,8 @@ int main()
    
     v.push_back(8);
     cout << "no of elements: " << v.size() << endl;//size() shows the  number of elements
+
+    // can use '.at' to find an element at an index
+    cout<<"element at 5th index is: "<<v.at(5);
+
 }

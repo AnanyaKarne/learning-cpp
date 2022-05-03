@@ -6,6 +6,7 @@ int main()
 
     vector<int> v; // initiallising a vector, when avector is made, its size as well as memory alloted to it is zero.
     cout << "size: " << v.capacity() << endl;
+    
 
     // for adding elements
     v.push_back(1);

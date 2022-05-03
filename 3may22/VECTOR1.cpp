@@ -20,13 +20,16 @@ int main()
     v.push_back(4);
     cout << "size: " << v.capacity() << endl;
 
-    v.push_back(4);
+    v.push_back(5);
     cout << "size: " << v.capacity() << endl;
 
-    v.push_back(4);
+    v.push_back(6);
     cout << "size: " << v.capacity() << endl;
 
-    v.push_back(4);
+    v.push_back(7);
     cout << "size: " << v.capacity() << endl;
     // so the vector doubles itself as soon it gets filled
+   
+    v.push_back(8);
+    cout << "no of elements: " << v.size() << endl;//size() shows the  number of elements
 }

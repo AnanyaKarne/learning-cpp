@@ -29,11 +29,22 @@ int main()
     v.push_back(7);
     cout << "size: " << v.capacity() << endl;
     // so the vector doubles itself as soon it gets filled
-   
+
     v.push_back(8);
-    cout << "no of elements: " << v.size() << endl;//size() shows the  number of elements
+    cout << "no of elements: " << v.size() << endl; // size() shows the  number of elements
 
     // can use '.at' to find an element at an index
-    cout<<"element at 5th index is: "<<v.at(5);
+    cout << "element at 5th index is: " << v.at(5);
 
+    //  can use front() and back() same as array
+
+    v.pop_back();
+    cout << "recent size of vector is:" << v.size() << endl;
+
+    cout << "recent capacity of vector is:" << v.capacity() << endl;
+
+    v.clear();
+    cout << "after clear size of vector is:" << v.size() << endl;
+
+    cout << "after clear capacity of vector is:" << v.capacity() << endl;
 }

@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+// pass by value-the compiler COPIES the value of an arguement in a calling function,it does not affect the original value.  
 int num(int n){
     int twice =n*2;
     return twice;

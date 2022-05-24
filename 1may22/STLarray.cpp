@@ -18,3 +18,5 @@ int main()
     cout << "last element is : " << a.back() << endl;        // accessing last element of array
 
 }
+
+

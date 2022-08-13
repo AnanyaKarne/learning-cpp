@@ -38,5 +38,4 @@ int main(){
         cin>>a>>b;
         equal(a,b);
     }
- 
 }

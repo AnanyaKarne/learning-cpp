@@ -1,18 +1,14 @@
 #include <iostream>
+#include<algorithm>
+
 using namespace std;
 
-void watest(int a, int ar[], string bin)
+void watest(int n, int ar[], int bin[])
 {
     int k = 0;
-    for (int i = 0; i < a; i++)
-    {
-        if (bin[i] == 0)
-        {
-            k = ar[i];
-            cout<< k<<endl;
-            cout<<"------"<<endl;
-            break;
-        }
+    // sort(ar,ar+n);
+    for(int i =0;i<n;i++){
+        if();
     }
 }
 
@@ -25,15 +21,18 @@ int main()
     {
         int n;
         cin >> n;
-        
-        string bin;
-        
         int ar[n];
+        int bin[n];
         for (int i = 0; i < n; i++)
         {
             cin >> ar[i];
         }
-        
+        for (int i = 0; i < n; i++)
+        {
+            cin >> bin[i];
+        }
+
+        watest(n, ar, bin);
     }
     return 0;
 }
